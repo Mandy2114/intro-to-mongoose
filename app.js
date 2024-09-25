@@ -76,7 +76,7 @@ async function deleteCustomer() {
 }
 
 
-// Connection and getting started prompt
+// Connection to MongoDB and getting started prompt
 function getStarted() {
   console.log(`Welcome to the CRM
 
