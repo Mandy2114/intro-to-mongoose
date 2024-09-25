@@ -1,0 +1,47 @@
+// const mongoose = require('mongoose')
+
+// const crmSchema = new mongoose.Schema({
+//   name: String,
+//   age: Number,
+// });
+
+// const CRM = mongoose.model('CRM', crmSchema);
+
+// module.exports = CRM;
+
+
+
+
+/////////////////////////----------------////////////////////////
+const customers = [];
+const UserId = 1;
+
+const displayMenu = () => {
+  console.log("\nCustomer Management System");
+  console.log('1. Create Customer');
+  console.log('2. View Customer');
+  console.log('3. Update Customer');
+  console.log('4. Delete Customer');
+  console.log('5. Quit');
+}
+
+const createCustomer = () => {
+  const name = prompt("Enter customer name: ");
+  customers.push({ id: nextId++, name });
+  console.log(`Customer ${name} created with ID ${nextId-1}.`)
+}
+
+const viewCustomer = () => { 
+  if (customers.length === 0) {
+    console.log("No customer found.");
+    return;
+  }
+  console.log("\nList of Customer:");
+  customers.forEach(customer => {})
+}
+
+const updateCustomer = () => { }
+
+const deleteCustomer = () => { }
+
+const quit = () => { }
