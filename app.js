@@ -5,7 +5,7 @@ import Customer from "./models/Customer.js";
 import mongoose from "mongoose";
 
 const prompt = promptSync();
-
+/////////i have no idea wnat im doing//////
 async function runQueries(choice) {
   switch (choice) {
     case "1":
